@@ -1,46 +1,105 @@
-header{
-    color: #fff
+/*Navbar*/
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #03004e;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:darkgrey;
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  nav li a:hover {
-    background-color: #111;
-  }
-
-body{
-    background-color: black;
-    color: seashell;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.menuContainer {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-p{
-    font-size: 1rem;
-    max-width: 50ch;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.5rem;
+nav {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+/*logo*/
+.navbar-brand {
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+  font-size: 19px;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-footer{
-    text-align: center;
+.navbar-brand:hover {
+  color: #ff0800;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  z-index: 1000;
+}
+
+.nav-link {
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin: 0 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.nav-item {
+  position: relative;
+  line-height: 3rem;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0800;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms;
+}
+
+.nav-item:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.nav-item a:hover {
+  color: #ff0800;
+}
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 50ch;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+/* Footer */
+.main-footer {
+  background: #03004e;
+  color: #fff;
+  padding: 50px 0px;
+  align-content: center;
+  text-align: center;
 }

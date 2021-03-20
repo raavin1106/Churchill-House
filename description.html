@@ -13,16 +13,32 @@
 
   <body>
     <header>
-      <h2><a href="index.html">Churchill House</a></h2>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="description.html">Description</a></li>
-          <li><a href="history.html">History</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="menuContainer">
+          <nav>
+              <a href="Index.html" class="navbar-brand">
+                  <p>Churchill House</p>
+              </a>
 
+              <ul class="nav-list">
+                  <li class="nav-item">
+                      <a href="Index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="description.html" class="nav-link">Description</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="history.html" class="nav-link">History</a>
+                  </li>
+              </ul>
+
+              <div class="hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>                    
+              </div>
+          </nav>
+      </div>
+  </header>
 
     <section>
       <h2 id="description">Description</h2>
@@ -122,9 +138,10 @@
       <a href="#">Back to Top</a>
     </section>
 
-    <footer>
-        This website was produced by the students in the Faculty of Arts &
+    <footer class="main-footer">
+      <div class="container center">This website was produced by the students in the Faculty of Arts &
         Design, University of Canberra, 2021.
+      </div>  
     </footer>
   </body>
 </html>
