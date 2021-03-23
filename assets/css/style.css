@@ -20,7 +20,7 @@ nav {
   height: 6rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
 }
 
 /*logo*/
@@ -55,7 +55,7 @@ nav {
 
 .nav-item {
   position: relative;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .nav-item::before {
@@ -80,6 +80,14 @@ nav {
   color: #ff0800;
 }
 
+img {
+  max-width: 100%;
+}
+
+.row-hero{
+  width: 960px;
+}
+
 body {
   background-color: white;
   color: black;
@@ -93,6 +101,7 @@ p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1.5rem;
+  padding: 1rem;
 }
 
 /* Footer */
