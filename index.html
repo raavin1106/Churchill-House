@@ -1,114 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Churchill House</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width, initial-scale = 1.0">
+    <meta name="viewport" content="width-device-width, initial-scale = 1.0" />
     <!-- Meta tag to specify character set - the characters used to display text (encoding) -->
-    <link href="assets/css/reset.css" rel="stylsheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- code to link page to stylesheet (CSS file) -->
-  </head>
+</head>
 
-  <body>
-    <header>
-      <div class="wrapper">
-        <h1><a href="index.html">Churchill House</a></h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="description.html">Description</a></li>
-            <li><a href="history.html">History</a></li>
-          </ul>
-        </nav>
-      </div>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Churchill House</a>
+            <input type="checkbox" id="chk" />
+            <label for="chk" class="show-menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <ul class="menu">
+                <a class="current" href="index.html">Home</a>
+                <a href="robinboyd.html">Robin Boyd</a>
+                <a href="history.html">History</a>
+                <a href="description.html">Description</a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <header id="showcase">
+        <div class="container">
+            <div class="showcase-container">
+                <div class="showcase-content">
+                    <h1>Churchill House</h1>
+
+                    <p>
+                        <strong>
+                            Churchill House, at 216 Northbourne Avenue in Braddon, was
+                            designed by Robin Boyd for the Winston Churchill Memorial Trust
+                            of Australia in 1969 – 70, and construction was completed in
+                            1971.
+                        </strong>
+                    </p>
+
+                    <p>
+                        <strong>It was Boyd’s last major commission, and he died prior to its
+                            completion. It is one of a small number of larger designs
+                            produced by Boyd and was Canberra’s first brutalist
+                            building.</strong>
+                    </p>
+
+                    <a href="#home-articles" class="btn btn-primary">Read More Below</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <div class="wrapper">
-        <p>
-          Churchill House, at 216 Northbourne Avenue in Braddon, was designed by
-          Robin Boyd for the Winston Churchill Memorial Trust of Australia in
-          1969-70, and construction was completed in 1971. It was Boyd’s last
-          major commission, and he died prior to its completion. It is one of a
-          small number of larger designs produced by Boyd and was Canberra’s
-          first brutalist building.
-        </p>
-        <section>
-          <h2 id="robin-boyd">Robin Boyd</h2>
+    <!-- Home Categories -->
+    <!-- This is going to be a section, so going to use the HTML5 section tag and I gave the ID of home-articles and also going to 
+        create padding class, so going to give it a class of py-2, to just give home articles some padding on the top and bottom. -->
+    <!-- So the home articles are going to be postioned a little different, so for instance the first article 'CHURCHILL HOUSE' I'm actually going to make 
+        that a grid within a grid so that we can align it the way shown when viewing my website - article image on the left and article text on the right. And some 
+        articles will have the article text on top and article image on bottom of the grid and some articles will have the article image on top and article text on bottom. So they 
+        will be formatted a little bit differently. -->
+    <section id="home-articles" class="py-2">
+        <!-- Added this container to wrap around everything, this will show padding on the edge of the website for the articles and it aslo aligns it
+                 to the middle. -->
+        <div class="container">
+            <!-- Created this container for our grid -->
+            <div class="articles-container">
+                <!-- So here I created the first home article - 'CHURCHILL HOUSE' which is again going to be a grid within a grid, it 
+                        will have the article image on the left and article text on the right. -->
+                <!-- Each of the articles are going to be an article tag and I gave the article tags a card class, so what my intentions was
+                        when creating this class, card is something you see in frameworks like bootstrap where you have maybe a background like mine with a 
+                        white background and some padding just something to put your content into rather than just having the text and images just floating 
+                        there with just the background. So those are going to be cards, so each one of these articles will have a class of card. I decided 
+                        to create the card class for each of the articles rather than targeting the article element itself because since this is my first time
+                        using grid layout, I wanted my code to look more clearer, and know that there was a card class being used in all these articles. But overall 
+                        just targeting the article element in CSS would have definetly been better and neat. But then again both these methods are correct and do the 
+                        same thing. -->
+                <!-- This is going to be the grid container. -->
+                <article class="card">
+                    <!-- This image is going to be one grid item. -->
+                    <img src="assets/img/churchill-house-26.jpg" alt="Churchill House" />
+                    <!-- Then this div will have the rest of the information inside of it, so for instance our h3, our title which is going be a link and it's
+                                going to go to churchill.html and under the h3 title, I added paragraph tags for the required article text content.  -->
+                    <div>
+                        <h3>Churchill House</h3>
+                        <p>
+                            Churchill House, at 216 Northbourne Avenue in Braddon, was
+                            designed by Robin Boyd for the Winston Churchill Memorial Trust
+                            of Australia in 1969-70, and construction was completed in 1971.
+                            It was Boyd’s last major commission, and he died prior to its
+                            completion. It is one of a small number of larger designs
+                            produced by Boyd and was Canberra’s first brutalist building.
+                        </p>
 
-          <p>
-            Robin Gerard Penleigh Boyd (1919-1971) was a nationally and
-            internationally renowned architect. He was also widely published and
-            appreciated as an architectural critic. In 1953 Robin Boyd, Roy
-            Grounds and Frederick Romberg formed the practice of Grounds,
-            Romberg and Boyd which became a leading architectural firm in
-            Melbourne. The firm also practiced extensively in Canberra.
-          </p>
-          <a href="#">back to top</a>
-        </section>
-        <section>
-          <h2 id="statement-of-signifigance" class="">
-            Statement of Signifigance
-          </h2>
+                        <p>
+                            Several components make up the complex. The main building, with
+                            east and south wings; the separate north wing or pavilion; the
+                            central pool and a rear carpark. The main building forms an L
+                            shape and with the north wing it encloses a courtyard with a
+                            large ornamental pool. The main building is three storeys high
+                            with a four storey lift tower at the southeast corner. The north
+                            wing and the carpark are two storeyed.
+                        </p>
 
-          <p>
-            Churchill House is a good example of the Late Twentieth Century
-            Brutalist style, (1960-), displaying several key features as
-            follows:
-          </p>
+                        <p>
+                            Although it has undergone some alterations over the years, the
+                            building still displays key features of the brutalist style with
+                            its large areas of blank wall and use off-form concrete, sloping
+                            structural fins and precast concrete non-loadbearing wall
+                            panels, precast fins for sun protection, and vertical slit
+                            windows. Churchill House displays a fairly restrained form in
+                            comparison with the major Canberra buildings that followed in
+                            this style: Cameron Offices, National Gallery of Australia and
+                            High Court of Australia.
+                        </p>
+                    </div>
+                </article>
+                <!-- So for this article, this one is not going to be it's own grid. So I don't need to add an extra div this time. 
+                             So this time it's going to be similar to what we did but this time I'm going to have the article text content up 
+                             top and have an image below the article content. -->
+                <article class="card">
+                    <h3>Statement Of Significance</h3>
+                    <p>
+                        Churchill House is a good example of the Late Twentieth Century
+                        Brutalist style, (1960-), displaying several key features. The architecture of this building may contribute to the education of designers in their understanding of Late Twentieth-Century Architectural Styles.
+                    </p>
+                    <img src="assets/img/churchill-house-38.jpg" alt=""/>
 
-          <ul>
-            <li>
-              Large areas of blank wall, especially the west wall of the south
-              wing.
-            </li>
-            <li>
-              Off-form concrete, such as the west wall of the south wing and the
-              spandrels to the south and east wings.
-            </li>
-          </ul>
+                    <a href="statement.html" class="forlinks">Read more about Statement of Significance</a>
+                </article>
+                <!-- So for this article, this article is going to have similar layout to the 'STATEMENT OF SIGNIFICANCE' article, it's not going to be it's
+                              own grid again. So this time it's going to have an image up top and have the article text content bellow the image. And it's
+                              also going to include the copyright category stamp between the image and article content. -->
+                <article class="card">
+                   <h3>Robin Boyd</h3>
+                    <p>
+                        Boyd is arguably the most influential architect there has been in
+                        Australia. Through his writings Boyd inspired the general
+                        community and through his architecture he has become an
+                        acknowledged leader in the design and architectural professions.
+                        He was a renowned Victorian architect, author, critic, and public
+                        educator in the 50s and 60s, a leader in Melbourne’s Modern
+                        Architecture movement, a visionary in urban design, and outspoken
+                        on the ‘Australian Identity’.
+                    </p>
 
-          <p>
-            In addition, it displays a number of the other features of this
-            style including:
-          </p>
-          <ul>
-            <li>sloping structural fins</li>
-            <li>precast concrete non-loadbearing wall panels</li>
-            <li>precast fins for sun protection</li>
-            <li>vertical slit windows</li>
-          </ul>
-          <p>
-            Churchill House is one of several Canberra examples of this style,
-            and one of only two which display a restrained form reflecting,
-            perhaps, a more conservative approach to the style because of the
-            intended office use.
-          </p>
+                    <img src="assets/img/extra2-robin boyd portrait-copyright-Mark-Strizic.jpg">
+                    <!--Need to ask if img name can be changed-->
 
-          <p>
-            The architecture of this building may contribute to the education of
-            designers in their understanding of Late Twentieth-Century
-            Architectural Styles.
-          </p>
+                    <a href="robinboyd.html" class="forlinks">Read more about Robin Boyd</a>
+                </article>
+                <!-- So for this article, its going to be similar to the 'STATEMENT OF SIGNIFICANCE' article, image on top and article text content below 
+                              the image and it's also not going to be it's own grid. -->
+                <article class="card">
+                    <h3>History</h3>
+                    <p>
+                        Churchill House was built by the Winston Churchill Memorial Trust
+                        of Australia. The Trust began consideration of erecting a building
+                        of its own in 1967 and formed a building committee in 1968. In
+                        1969 it acquired a lease for land on Northbourne Avenue, the
+                        current site, and engaged the architect Robin Boyd to design the
+                        building.
+                    </p>
+                    <img src="assets/img/churchill-house-21.jpg" alt="" />
 
-          <p>
-            Churchill House has interest for its association with the prominent
-            architect, Robin Boyd. The building was his last major commission.
-          </p>
+                    <a href="history.html" class="forlinks">Read more about the History</a>
+                </article>
+                <!-- This article is going to have the same layout as the 'CHURCHILL HOUSE' article, which is again going to be a grid within a grid, it 
+                             will have the article image on the left and article content on the right. -->
+                <article class="card">
+                    <img src="assets/img/tech2.png" alt="" />
+                    <div>
+                        <h3>
+                            <a href="https://robinboyd.org.au/centenary/">Robin Boyd Foundation</a>
+                        </h3>
+                        <p>
+                            Please visit the
+                            <a href="https://robinboyd.org.au/centenary/" class="forlinks">Robin Boyd Foundation
+                                website</a>
+                            to read more information about the centenary.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-          <a href="#">back to top</a>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="wrapper">
-        <p>
-          This website was produced by the students in the Faculty of Arts &
-          Design, University of Canberra, 2021.
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div>
+                <p>
+                    The website was produced by students in the Faculty of Arts &
+                    Design, University of Canberra, 2021.
+                </p>
+            </div>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>
