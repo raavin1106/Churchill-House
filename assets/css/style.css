@@ -11,15 +11,10 @@ box sizing to border box. */
 	box-sizing: border-box;
 }
 
-/* I set the colour of the copyright item here. */
-.category {
-	--copyright-color: #f99500;
-}
-
 body {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	line-height: 1.5;
-	background:rgba(0, 0, 0, 0.336);
+	background:rgb(80, 80, 80);
 }
 
 a {
@@ -70,7 +65,7 @@ h6 {
 
 /* Utility */
 .container {
-	max-width: 1400px;
+	max-width: 1800px;
 	margin: auto;
 	padding: 0 2rem;
 	overflow: hidden;
@@ -80,13 +75,12 @@ h6 {
 .btn {
 	display: inline-block;
 	border: none;
-	background: var(--dark-color);
 	color: #fff;
 	padding: 0.5rem 1.5rem;
 }
 
 .btn-primary {
-	background: rgb(0, 17, 255);
+	background: rgb(140, 0, 255);
 }
 
 .btn-block {
@@ -106,7 +100,7 @@ h6 {
 
 /* created this class to give the section, home articles some padding on the top and the bottom from the showcase (header) and footer. 
 Basically a class for padding.*/
-.py-2 {
+.articles {
 	padding: 2rem 0;
 }
 
@@ -127,6 +121,14 @@ nav {
 	height: 100px;
 	background: rgb(0, 0, 0);
 	padding: 0 20px;
+}
+
+.fas {
+	color: white;
+}
+
+.fa-times{
+	color: black;
 }
 
 .logo {
@@ -162,6 +164,7 @@ nav {
 }
 
 nav ul a.current {
+	background: rgb(140, 0, 255);
 	color: #fff;
 }
 
@@ -173,10 +176,8 @@ nav ul a.current {
 	line-height: 100px;
 }
 
-.menu a:hover,
-.show-menu-btn:hover,
-.hide-menu-btn:hover {
-	background-color: crimson;
+.menu a:hover{
+	background-color: rgb(140, 0, 255);
 }
 
 #chk {
@@ -274,18 +275,9 @@ and center the image to make it look good. */
 	background: black;
 	color: #fff;
 	padding: 60px 0;
+	text-align: center;
 }
 
-/* The intentions for me adding this code here is because my plan was to have two items in the footer when I was looking at my wireframes and 
-my plan was to target them by using first child and last child, plan was to add a logo to the footer as a last child and make it link to the robyn boyd foundation,
-but I didn't end up doing it. So overall I didn't make a good use of the footer container, but rather I targeted the paragraph in the div as a first child
-and gave it some properties defined below. */
-#main-footer .footer-container > *:first-child {
-	background: rgb(0, 0, 0);
-	align-content: center;
-	text-align: center;
-	font-size: 0.85rem;
-}
 
 /* Navigation media queries */
 /* Made the max-width: 1024px because I want people with
@@ -301,7 +293,7 @@ and also more. */
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background: #d3d3d3;
+		background: #a1a0a0;
 		right: -100%;
 		top: 0;
 		text-align: center;
