@@ -47,9 +47,10 @@ h6 {
 	margin-bottom: .55rem;
 	line-height: 1.3;
 	color: #fff;
+	font-size: 2rem;
 }
 
-.forlinks {
+.links {
 	color: rgb(251, 255, 0);
 }
 
@@ -104,9 +105,6 @@ Basically a class for padding.*/
 	padding: 2rem 0;
 }
 
-.l-heading {
-	font-size: 3rem;
-}
 
 /* Inner page grid container */
 .page-container {
@@ -207,7 +205,7 @@ So now I can see the image has an overlay or it's not really an overlay on the i
 it to the dark, that's bascially what's happening. Can also see through the text right now but that gets fixed in the .showcase-content
 class below by adding a z-index of 1. */
 #showcase:before {
-	content: '';
+	content: "";
 	background: url('../img/churchill-house-46.jpg') no-repeat center center/cover;
 	position: absolute;
 	top: 0;
@@ -352,9 +350,5 @@ and also more. */
 
 	.page-container {
 		text-align: center;
-	}
-
-	.l-heading {
-		font-size: 2rem;
 	}
 }
